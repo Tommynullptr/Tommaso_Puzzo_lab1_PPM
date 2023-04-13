@@ -106,4 +106,36 @@ a {
     text-decoration: none;
 }
 
+.back-paper {
+    background-color: cornflowerblue;
+}
+
+.paper {
+    background-color: white;
+    padding: 20px;
+    gap: 20px;
+    align-content: center;
+    margin: 80px;
+}
+
+.content1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.content-list1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    color: black;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    flex: 1 1 70%;
+}
+
+.content2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
