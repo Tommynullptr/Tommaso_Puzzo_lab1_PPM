@@ -107,7 +107,7 @@ a {
 }
 
 .back-paper {
-    background-color: cornflowerblue;
+    background-color: lightgrey;
 }
 
 .paper {
@@ -131,6 +131,7 @@ a {
     list-style: none;
     flex-wrap: wrap;
     flex: 1 1 70%;
+    border-bottom: grey 1px solid;
 }
 
 .content2 {
@@ -138,4 +139,28 @@ a {
     flex-wrap: wrap;
 }
 
+.content-list1 h5 {
+    font-size: larger;
+    color: black;
+}
+
+.content-list1 p {
+    color: grey;
+}
+
+.content-list2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    color: black;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    flex: 1 1 70%;
+    border-bottom: grey 1px solid;
+}
+
+.content-list2 h5 {
+    font-size: larger;
+    color: black;
+}
 
