@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+
 <head>
     <meta charset="UTF-8">
     <title>Le Monde.fr</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
+
+
 <body>
-    <div class="grid-container">
-    <h2>Français | <a href="">English</a></h2>
-    <h1>Le Monde</h1>
+    <div class="central-text">
+    <div><h2>Français | <a href="" style="color: grey;text-decoration: none">English</a></h2></div>
+        <div class="title"><h1><a href="index.html" style="text-decoration: none; color: black; font-size: xxx-large">Le Monde</a></h1></div>
     </div>
-    <div class="grid-item">
-        <h3><a href="">Se connecter</a> | <a href="" style="background-color: yellow;text-decoration:none;">S’abonner
+    <div class="connections">
+        <h3><a href="">Se connecter</a> | <a href="" style="background-color: yellow">S’abonner
             dès 5,49 €/mois</a> </h3>
     </div>
-    <div class="grid-container">
-        <div class="grid-item"></div>   <!-- aggiungere un blocchetto colorato boh -->
-        <div class="grid-item"><h4>Consulter le journal</h4></div>
+    <a href=""><div class="grid-container">
+        <div><img src="https://via.placeholder.com/100x80"></div>
+        <span><div ><h4 style="color: grey">Consulter le journal</h4></div></span>
 
+    </div></a>
+    <div >   <!-- classe per menu a tendina + menu sticky per scrolling solo quello sopra-->
+        <nav>
+            <ul class="central-menu">
+                <li><a href="index.html" >HOME</a></li>
+                <li><a href="">ACTUALITÉS</a></li>
+                <li><a href="">ÉCONOMIE</a></li>
+                <li><a href="">VIDÉOS</a></li>
+                <li><a href="">DÉBATS</a></li>
+                <li><a href="">CULTURE</a></li>
+                <li><a href="">LE GOÛT DU MONDE</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">RECHERCHE</a></li>
+            </ul>
+        </nav>
     </div>
-    <div class="grid-container menu sticky-menu">   <!-- classe per menu a tendina + menu sticky per scrolling-->
-        <nav class="menu">
-            <ul class="menu">
-                <li class="menu"><a href="index.html" style="text-decoration:none;color: black">HOME</a></li>
-                <li class="menu"><a href="" style="text-decoration:none;color: black">ACTUALITÉS</a></li>
-                <li class="menu"><a href="" style="text-decoration:none;color: black">ÉCONOMIE</a></li>
-                <li class="menu"><a href="" style="text-decoration:none;color: black">VIDÉOS</a></li>
-                <li class="menu"><a href="" style="text-decoration:none;color: black">DÉBATS</a></li>
-                <li class="menu"><a href="" style="text-decoration:none;color: black">CULTURE</a></li>
-                <li class="menu"><a href="" style="text-decoration:none;color: black">LE GOÛT DU MONDE</a></li>
-                <li class="menu"><a href="" style="text-decoration:none;color: black">SERVICES</a></li>
-                <li class="menu"><a href="" style="text-decoration:none;color: black">RECHERCHE</a></li>
+    <div class="blue-menu">   <!-- menu blu sotto a quello a tendina -->
+        <nav>
+            <ul class="blue-grid">
+                <li><a href="">ACTUALITÉS</a></li>
+                <li><a href="">ACTUALITÉS</a></li>
+                <li><a href="">ÉCONOMIE</a></li>
+                <li><a href="">VIDÉOS</a></li>
+                <li><a href="">DÉBATS</a></li>
+                <li style="border-right: none"><a href="">CULTURE</a></li>
             </ul>
         </nav>
     </div>
