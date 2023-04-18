@@ -6,7 +6,7 @@
     background-color: mediumblue;
     text-decoration: white none;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     height: 5px;
     list-style: none;
 }
@@ -41,9 +41,6 @@
     display: grid;
 }
 
-.blue-menu ul:last-child {
-    border-right: none;
-}
 
 .grid-block {
     display: grid;
@@ -58,6 +55,7 @@
 }
 
 .central-menu {
+    margin-top: 0;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     gap: 40px;
@@ -115,6 +113,7 @@ a {
 
 .back-paper {
     background-color: lightgrey;
+    padding: 20px;
 }
 
 .paper {
@@ -122,7 +121,8 @@ a {
     padding: 20px;
     gap: 20px;
     align-content: center;
-    margin: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .content1 {
@@ -197,11 +197,10 @@ a {
 
 .foreground-content {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 80%;
-    height: 80%;
     background-color: white;
     text-align: center;
 }
@@ -266,7 +265,9 @@ a {
     background-color: midnightblue;
     color: white;
     padding: 20px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
 }
 
 .footer a {
@@ -275,11 +276,13 @@ a {
 }
 
 .footer-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
     color: white;
-    list-style: none;
+}
+
+.first-page {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 
