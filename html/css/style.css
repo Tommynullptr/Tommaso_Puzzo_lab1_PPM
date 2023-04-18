@@ -1,5 +1,4 @@
 
-
 .blue-grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -124,11 +123,11 @@ a {
     margin-left: 80px;
     margin-right: 80px;
 }
-
+/*
 .content1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
+}*/
 
 .content-list1 {
     grid-template-columns: repeat(3, 1fr);
@@ -283,6 +282,15 @@ a {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+}
+.first-post {
+    width: 60%;
+}
+.first-post img {
+    max-width: 100%;
+}
+.first-page .container {
+    width: 30%;
 }
 
 
