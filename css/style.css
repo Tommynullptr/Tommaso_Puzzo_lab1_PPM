@@ -18,12 +18,6 @@
     list-style: none;
 }
 
-
-/*.grid-item {
-    grid-column: span 3;
-    grid-row: span 2;
-}*/
-
 .blue-menu {
     background-color: mediumblue;
     text-decoration: white none;
@@ -53,7 +47,7 @@
     text-align: center;
 }
 
-.central-menu {
+.menu-style {
     margin-top: 0;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -62,21 +56,20 @@
     text-decoration: none;
     color: black;
     padding: 10px;
-    border-top: mediumblue 4px solid;
     overflow: auto;
     white-space: nowrap;
 }
 
-.central-menu:last-child {
+.menu-style:last-child {
     border-right: none;
 }
 
-.central-menu a {
+.menu-style a {
     text-decoration: none;
     color: black;
 }
 
-.scrolled-menu {
+#scrolled-menu {
     display: none;
     position: sticky;
     top: 0;
@@ -88,6 +81,12 @@
     border-top: mediumblue 4px solid;
     overflow: auto;
     white-space: nowrap;
+    background-color: white;
+    z-index: 1;
+}
+
+#scrolled-menu .menu-style {
+    grid-template-columns: repeat(10, 1fr);
 }
 
 .dropdown-menu {
@@ -98,7 +97,8 @@
     left: 0;
     right: 0;
     height:300px;
-    background: red;
+    background-color: white;
+    z-index: 1;
 }
 
 .dropdown-menu.show {
@@ -113,29 +113,6 @@
 .connections a{
     text-decoration: none;
     color: black;
-}
-
-
-/*
-.sticky-menu {
-  position: fixed;
-  top: 0;
-}
-*/
-
-.menu ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    margin-right: 20px;
-}
-
-.menu li:last-child {
-    margin-right: 0;
 }
 
 a {
@@ -155,11 +132,6 @@ a {
     margin-left: 80px;
     margin-right: 80px;
 }
-/*
-.content1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}*/
 
 .content-list1 {
     grid-template-columns: repeat(3, 1fr);
@@ -352,5 +324,46 @@ a {
     width: 30%;
 }
 
+.container2 {
+    width: 300px;
+    padding: 10px;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.list2 {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    gap: 60px;
+    position:relative;
+}
+
+.list2 li:nth-child(3n) {
+    clear: left;
+}
+
+.list2 li {
+    list-style: none;
+}
+
+.list2 a {
+    color: black;
+}
 
 

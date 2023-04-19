@@ -24,15 +24,12 @@
         <span><div ><h4 style="color: grey">Consulter le journal</h4></div></span>
 
     </div></a>
-    <div style="position: relative">   <!-- menu a tendina -->
+    <div style="position: relative; border-top: mediumblue 4px solid;" >   <!-- menu a tendina -->
         <nav>
-            <ul class="central-menu">
-                <li><a href="#" id="menu-1-toggler">HOME</a></li>
-                <li>
-                    <a href="">ACTUALITÉS</a>
-
-                </li>
-                <li><a href="">ÉCONOMIE</a></li>
+            <ul id="central-menu" class="menu-style">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="" id="menu-1-toggler">ACTUALITÉS</a></li>
+                <li><a href="" id="menu-2-toggler">ÉCONOMIE</a></li>
                 <li><a href="">VIDÉOS</a></li>
                 <li><a href="">DÉBATS</a></li>
                 <li><a href="">CULTURE</a></li>
@@ -42,21 +39,107 @@
             </ul>
         </nav>
         <div class="dropdown-menu" id="menu-1">
-
+            <div style="display: flex">
+            <div class="container2">
+                <h5>EN CE MOMENT</h5>
+                    <nav>
+                        <ul class="list">
+                            <li><a href="">Sujet 1</a> </li>
+                            <li><a href="">Sujet 2</a> </li>
+                            <li><a href="">Sujet 3</a> </li>
+                            <li><a href="">Sujet 4</a> </li>
+                            <li><a href="">Sujet 5</a> </li>
+                            <li><a href="">Sujet 6</a> </li>
+                            <li><a href="">Sujet 7</a> </li>
+                            <li><a href="">Sujet 8</a> </li>
+                            <li><a href="">Sujet 9</a> </li>
+                        </ul>
+                    </nav>
+            </div>
+            <div>
+                <h5>ACTUALITÉS</h5>
+                <nav>
+                    <ul class="list2">
+                        <li><a href="">Sujet 1</a> </li>
+                        <li><a href="">Sujet 2</a> </li>
+                        <li><a href="">Sujet 3</a> </li>
+                        <li><a href="">Sujet 4</a> </li>
+                        <li><a href="">Sujet 5</a> </li>
+                        <li><a href="">Sujet 6</a> </li>
+                        <li><a href="">Sujet 7</a> </li>
+                        <li><a href="">Sujet 8</a> </li>
+                        <li><a href="">Sujet 9</a> </li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+        <div class="dropdown-menu" id="menu-2">
+            <div style="display: inline-flex">
+            <nav>
+                <ul class="menu-list" style="list-style: none">
+                    <li><a href="">Section 1</a> </li>
+                    <li><a href="">Section 2</a> </li>
+                    <li><a href="">Section 3</a> </li>
+                </ul>
+            </nav>
+            <div class="content-list1" style="border-bottom: none">
+                <nav>
+                    <ul style="gap: 40px; margin-bottom: 140px; list-style: none;display: flex">
+                        <li><div class="container">
+                            <a href="">
+                                <div class="background-image">
+                                    <img src="https://via.placeholder.com/180x180">
+                                </div>
+                                <div class="foreground-content">
+                                    <h5>Titre</h5>
+                                    <p>Description</p>
+                                </div>
+                            </a>
+                        </div>
+                        </li>
+                        <li><div class="container">
+                            <a href="">
+                                <div class="background-image">
+                                    <img src="https://via.placeholder.com/180x180">
+                                </div>
+                                <div class="foreground-content">
+                                    <h5>Titre</h5>
+                                    <p>Description</p>
+                                </div>
+                            </a>
+                        </div>
+                        </li>
+                        <li><div class="container">
+                            <a href="">
+                                <div class="background-image">
+                                    <img src="https://via.placeholder.com/180x180">
+                                </div>
+                                <div class="foreground-content">
+                                    <h5>Titre</h5>
+                                    <p>Description</p>
+                                </div>
+                            </a>
+                        </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
         </div>
     </div>
-    <div  class="scrolled-menu">
+    <div  id="scrolled-menu">
         <nav>
-            <ul>
+            <ul class="menu-style">
                 <li><a href="index.html" >LE MONDE </a>|  </li>
-                <li><a href="">ACTUALITÉS</a></li>
-                <li><a href="">ÉCONOMIE</a></li>
+                <li><a href="" id="menu-1x-toggler">ACTUALITÉS</a></li>
+                <li><a href="" id="menu-2x-toggler">ÉCONOMIE</a></li>
                 <li><a href="">VIDÉOS</a></li>
                 <li><a href="">DÉBATS</a></li>
                 <li><a href="">CULTURE</a></li>
                 <li><a href="">LE GOÛT DU MONDE</a></li>
                 <li><a href="">SERVICES</a></li>
-                <li><a href="">Se connecter</a></li>
+                <li><a href="">Se connecter</a> | </li>
                 <li><a href="" style="background-color: yellow">S'abboner</a></li>
             </ul>
         </nav>
