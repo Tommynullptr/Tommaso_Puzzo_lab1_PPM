@@ -79,7 +79,6 @@
     color: black;
     padding: 10px;
     border-top: mediumblue 4px solid;
-    overflow: auto;
     white-space: nowrap;
     background-color: white;
     z-index: 1;
