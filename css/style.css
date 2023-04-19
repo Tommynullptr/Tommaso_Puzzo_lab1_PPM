@@ -270,7 +270,6 @@ a {
     list-style: none;
     flex-wrap: wrap;
     flex: 1 1 70%;
-    border-bottom: grey 1px solid;
 }
 
 .content-list4 h5 {
