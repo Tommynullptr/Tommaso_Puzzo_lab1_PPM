@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Le Monde.fr</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="scripts/jscripts.js"></script>
 </head>
 
 
@@ -26,8 +27,11 @@
     <div >   <!-- menu a tendina -->
         <nav>
             <ul class="central-menu">
-                <li><a href="index.html" >HOME</a></li>
-                <li><a href="">ACTUALITÉS</a></li>
+                <li><a href="#" id="menu-1-toggler">HOME</a></li>
+                <li>
+                    <a href="">ACTUALITÉS</a>
+
+                </li>
                 <li><a href="">ÉCONOMIE</a></li>
                 <li><a href="">VIDÉOS</a></li>
                 <li><a href="">DÉBATS</a></li>
@@ -35,6 +39,22 @@
                 <li><a href="">LE GOÛT DU MONDE</a></li>
                 <li><a href="">SERVICES</a></li>
                 <li><a href="">RECHERCHE</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div  class="scrolled-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html" >LE MONDE </a>|  </li>
+                <li><a href="">ACTUALITÉS</a></li>
+                <li><a href="">ÉCONOMIE</a></li>
+                <li><a href="">VIDÉOS</a></li>
+                <li><a href="">DÉBATS</a></li>
+                <li><a href="">CULTURE</a></li>
+                <li><a href="">LE GOÛT DU MONDE</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">Se connecter</a></li>
+                <li><a href="" style="background-color: yellow">S'abboner</a></li>
             </ul>
         </nav>
     </div>
@@ -55,24 +75,25 @@
     <div>
         <div class="first-page">
             <div class="first-post" href="">
-                <h5 style="color: darkslategray; font-size: x-large">Titre de la page</h5>
-               <img src="https://via.placeholder.com/600x400">
-                <p style="color: black">Description</p>
+                <h5><a href="" style="color: darkslategray; font-size: x-large">Titre de la page</a></h5>
+                <a href=""><img src="https://via.placeholder.com/600x400"></a>
+                <p><a href=""  style="color: black">Description</a></p>
             </div>
             <div class="container">
                 <div class="background-image">
-                    <img width="550" height="550" src="https://via.placeholder.com/400x400">
+                    <a href=""><img width="550" height="550" src="https://via.placeholder.com/400x400"></a>
                 </div>
                 <div class="foreground-content">
-                    <h5>Titre</h5>
+                    <a href=""><h5>Titre</h5>
                     <p>Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description </p>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
         <div class="content2">
             <nav>
-                <ul class="content-list1">
+                <ul class="content-list1" style="grid-gap: 100px">
                     <li><a href=""><h5>Article 1</h5></a></li>
                     <li><a href=""><h5>Article 2</h5></a></li>
                     <li><a href=""><h5>Article 3</h5></a></li>
@@ -88,7 +109,8 @@
                 </ul>
             </nav>
         </div>
-        <a href=""><div>
+        <a href="">
+        <div>
             <nav>
                 <ul class="content-list1">
                     <li><img src="https://via.placeholder.com/50x50"></li>
@@ -117,8 +139,9 @@
             <h5 style="color: darkslategray; font-size: x-large">Sélection de la rédaction</h5>
             <div class="content-list1">
                 <nav>
-                    <ul>
+                    <ul style="gap: 40px; margin-bottom: 140px">
                         <li><div class="container">
+                            <a href="">
                             <div class="background-image">
                                 <img src="https://via.placeholder.com/180x180">
                             </div>
@@ -126,9 +149,11 @@
                                 <h5>Titre</h5>
                                 <p>Description</p>
                             </div>
+                            </a>
                         </div>
                         </li>
                         <li><div class="container">
+                            <a href="">
                             <div class="background-image">
                                 <img src="https://via.placeholder.com/180x180">
                             </div>
@@ -136,9 +161,11 @@
                                 <h5>Titre</h5>
                                 <p>Description</p>
                             </div>
+                            </a>
                         </div>
                         </li>
                         <li><div class="container">
+                            <a href="">
                             <div class="background-image">
                                 <img src="https://via.placeholder.com/180x180">
                             </div>
@@ -146,40 +173,45 @@
                                 <h5>Titre</h5>
                                 <p>Description</p>
                             </div>
+                                </a>
                         </div>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div>
+        <div style="margin-bottom: 40px">
             <h5 style="font-size: x-large">Les plus plus</h5>
             <nav>
                 <ul  class="content-list3">
-                    <li>Article 1</li>
-                    <li>Article 2</li>
-                    <li>Article 3</li>
-                    <li>Article 4</li>
-                    <li>Article 5</li>
-                    <li>Article 6</li>
-                    <li>Article 7</li>
-                    <li>Article 8</li>
-                    <li>Article 9</li>
-                </ul>
-            </nav>
-        </div>
-        <div class="content2">
-            <h5 style="font-size: x-large">Titre</h5>
-            <img src="https://via.placeholder.com/250x250">
-            <p>Article 1</p>
-            <nav>
-                <ul class="content-list2" style="display: grid">
+                    <li><a href="">Article 1</a></li>
                     <li><a href="">Article 2</a></li>
                     <li><a href="">Article 3</a></li>
                     <li><a href="">Article 4</a></li>
-                    <li><a href="">Article 4</a></li>
+                    <li><a href="">Article 5</a></li>
+                    <li><a href="">Article 6</a></li>
+                    <li><a href="">Article 7</a></li>
+                    <li><a href="">Article 8</a></li>
+                    <li><a href="">Article 9</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="content2" style="border-bottom: grey 1px solid">
+            <div class="first-post"><a href="">
+            <h5 style="font-size: x-large">Titre</h5>
+            <img src="https://via.placeholder.com/250x250">
+                <p style="color: grey">Article 1</p></a>
+            </div>
+            <div>
+            <nav>
+                <ul class="content-list2" style="display: grid">
+                    <li><a href="" style="color: black">Article 2</a></li>
+                    <li><a href="" style="color: black">Article 3</a></li>
+                    <li><a href="" style="color: black">Article 4</a></li>
+                    <li><a href="" style="color: black">Article 4</a></li>
+                </ul>
+            </nav>
+            </div>
         </div>
         <h5 style="font-size: x-large">Partenaires</h5>
         <div class="content2">
