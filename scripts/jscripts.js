@@ -1,38 +1,16 @@
 
 
-function mostraMenu() {
+function showMenu() {
+    var dropdownMenu = document.getElementById("dropdown-menu");
+    dropdownMenu.classList.toggle("show");
+}
+
+function hideMenu() {
     var dropdownMenu = document.getElementById("dropdown-menu");
     dropdownMenu.classList.toggle("show");
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('menu-1-toggler').addEventListener('click', function(e) {
-        e.preventDefault();
-        console.log('clic');
-        console.log(document.getElementById('menu-1'));
-        document.getElementById('menu-1').classList.add('show');
-    })
-
-    document.getElementById('menu-2-toggler').addEventListener('click', function(e) {
-        e.preventDefault();
-        console.log('clic');
-        console.log(document.getElementById('menu-2'));
-        document.getElementById('menu-2').classList.add('show');
-    })
-
-    document.getElementById('menu-1x-toggler').addEventListener('click', function(e) {
-        e.preventDefault();
-        console.log('clic');
-        console.log(document.getElementById('menu-1x'));
-        document.getElementById('menu-1x').classList.add('show');
-    })
-
-    document.getElementById('menu-2x-toggler').addEventListener('click', function(e) {
-        e.preventDefault();
-        console.log('clic');
-        console.log(document.getElementById('menu-2x'));
-        document.getElementById('menu-2x').classList.add('show');
-    })
 
     window.centralMenu = document.getElementById("central-menu");
     window.scrolledMenu = document.getElementById("scrolled-menu");
@@ -49,29 +27,55 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-    var centralMenuItems = document.querySelectorAll("#central-menu li a");
+    document.getElementById('menu-1-toggler').addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('click');
+        var menu = document.getElementById('menu-1');
+        menu.classList.toggle('show');
+    });
+
+
+    document.getElementById('menu-2-toggler').addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('click');
+        var menu = document.getElementById('menu-2');
+        menu.classList.toggle('show');
+    });
+
+
+    document.getElementById('menu-1x-toggler').addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('click');
+        var menu = document.getElementById('menu-1x');
+        menu.classList.toggle('show');
+    });
+
+
+    document.getElementById('menu-2x-toggler').addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('click');
+        var menu = document.getElementById('menu-2x');
+        menu.classList.toggle('show');
+    });
+
+
+    var centralMenuItems = document.querySelectorAll("#central-menu li button");
     centralMenuItems.forEach(function(item) {
         item.addEventListener("click", function(event) {
             event.preventDefault();
-            mostraMenu();
+            showMenu();
         });
     });
 
 
-    var scrolledMenuItems = document.querySelectorAll("#scrolled-menu li a");
+    var scrolledMenuItems = document.querySelectorAll("#scrolled-menu li button");
     scrolledMenuItems.forEach(function(item) {
         item.addEventListener("click", function(event) {
             event.preventDefault();
-            mostraMenu();
+            showMenu();
         });
-    });
-
-    window.addEventListener('click', function(e) {
-        var dropdownMenu = document.getElementById('dropdown-menu');
-        if (e.target !== dropdownMenu && !dropdownMenu.contains(e.target)) {
-            document.getElementById('menu-1').classList.remove('show');
-        }
     });
 
 
 })
+

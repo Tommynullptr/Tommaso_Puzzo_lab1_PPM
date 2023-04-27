@@ -1,4 +1,5 @@
 
+
 .blue-grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -60,6 +61,11 @@
     white-space: nowrap;
 }
 
+.menu-style button {
+    border: none;
+    background-color: white;
+}
+
 .menu-style:last-child {
     border-right: none;
 }
@@ -79,7 +85,6 @@
     color: black;
     padding: 10px;
     border-top: mediumblue 4px solid;
-    white-space: nowrap;
     background-color: white;
     z-index: 1;
 }
@@ -363,5 +368,6 @@ a {
 .list2 a {
     color: black;
 }
+
 
 
